@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        body,
+        input,
+        p {
+            margin: 0;
+            padding: 0;
+        }
+
+        #dic {
+            margin: 10px auto;
+            width: 140px;
+        }
+
+        input {
+            margin-right: 5px;
+            vertical-align: middle;
+            width: 10px;
+            height: 10px;
+        }
+
+        #tips {
+            padding: 5px;
+            margin-top: 5px;
+            background: #ffefa4;
+            border: 1px solid #f90;
+            display: none;
+        }
+
+        .wen{
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="dic">
+        <label><input type="checkbox;"></label>
+        <p class="wen">两周内自动登录</p>
+        <div id="tips">为了您的信息安全，请不要在网吧或公用电脑上使用此功能！</div>
+
+    </div>
+    <script>
+    window.onload=function(){
+        var oTips=document.getElementById("tips");
+        var oLabel=document.getElementsByTagName("label")[0];
+        oLabel.onmouseover=function(){
+            oTips.style.display="block"
+        };
+        oLabel.onmouseout=function(){
+            oTips.style.display="none"
+        }
+    }
+    </script>
+</body>
+
+</html>

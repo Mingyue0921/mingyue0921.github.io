@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        .box {
+            width: 972px;
+            height: 20px;
+            margin: 0 auto;
+            padding: 10px 0;
+        }
+
+        .box1 {
+            width: 20px;
+            height: 20px;
+            background: red;
+            float: left;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .box2 {
+            width: 20px;
+            height: 20px;
+            background: green;
+            float: left;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .box3 {
+            width: 20px;
+            height: 20px;
+            background: black;
+            float: left;
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .nav {
+            width: 972px;
+            height: 50px;
+            background: blueviolet;
+            margin: 0 auto;
+        }
+
+        .nav a {
+            text-decoration: none;
+            width: 160px;
+            height: 50px;
+            /*background: red;*/
+            float: left;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 50px;
+            color: white;
+            border: white solid 1px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="ck" class="box">
+        <div class="box1" onclick="changeColor('red')"></div>
+        <div class="box2" onclick="changeColor('green')"></div>
+        <div class="box3" onclick="changeColor('black')"></div>
+    </div>
+
+    <div id="nbc" class="nav">
+        <div><a href="">新闻</a></div>
+        <div><a href="">娱乐</a></div>
+        <div><a href="">体育</a></div>
+        <div><a href="">电影</a></div>
+        <div><a href="">音乐</a></div>
+        <div><a href="">旅游</a></div>
+    </div>
+    <script>
+       /* function change_red() {
+            var elem = document.getElementById("nbc")
+            elem.style.backgroundColor = 'red';
+            document.body.style.backgroundColor = 'red'
+        }
+        function change_green() {
+            var elem = document.getElementById("nbc")
+            elem.style.backgroundColor = 'green';
+            document.body.style.backgroundColor = 'green'
+        }
+        function change_black() {
+            var elem = document.getElementById("nbc")
+            elem.style.backgroundColor = 'black';
+            document.body.style.backgroundColor = 'black'
+        }*/
+        function changeColor(color){
+            var elem = document.getElementById("nbc")
+            elem.style.backgroundColor = color;
+            document.body.style.backgroundColor = color
+        }
+    </script>
+</body>
+
+</html>

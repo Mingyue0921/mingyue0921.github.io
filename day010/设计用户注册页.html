@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>用户注册</title>
+    <style type="text/css">
+    form{
+        width: 600px;
+        font-size: 14px;
+        margin: 0 auto;
+    }
+    fieldset{
+        margin: 15px auto;
+        text-align: left;
+        width: 600px;
+        border-radius:5px;
+    }
+    legend{
+        padding: 3px 12px;
+        border:1px solid #1E7ACE;
+        font-weight: bold;
+    }
+    input{
+        margin-right: 10px;
+        width: 150px;
+        height: 20px;
+        line-height: 20px;
+        border: 1px solid #094e87;
+    }
+    p.enter{
+        text-align: center;
+    }
+    p.enter input{
+        border: 1px solid #369;
+        background: #6cf;
+        width: 60px;
+        line-height: 25px;
+        height: 25px;
+        position: relative;
+        left: -40px;
+    }
+    label{
+        width: 140px;
+        float: left;
+        text-align: right;
+        line-height: 20px;
+    }
+    p.XB2 input{
+        width: auto;
+        border: none;
+        margin-right: 0;
+        position: relative;
+        top: 3px;
+    }
+    p.XB2 label.Wid2{
+        width: auto;
+        position: relative;
+        top: -6px;
+        +top:-3px;
+    }
+    p.fuwu input{
+    width: auto;
+    height: 12px;
+    line-height: 12px;
+    border: none;
+    margin-right: 0;
+    }
+    a{
+        color: #000;
+        font-size: 12px;
+    }
+    select{
+        height: 25px;
+        width: 151px;
+        color: #36F;
+        border: none;
+        border: 1px solid #094e87;
+
+    }
+    textarea{
+        height: 45px;
+        width: 220px;
+        border: 1px solid #094e87;
+   }
+   input:hover{
+       background-color: #f30;
+   }
+   p.fuwu input:hover{
+       background: none;
+   }
+   p.XB2 input:hover{
+       background: none;
+   }
+   span{
+       color: #f00;
+       font-size: 12px;
+   }
+    </style>
+</head>
+
+<body>
+    <form action="" method="POST" name="" id="Form">
+        <fieldset>
+            <legend>用户登录 </legend>
+            <p><label form="xingming">用户名：</label>
+                <input type="text" name="xingming" id="xingming" value="" />
+            </p>
+            <p><label for="mima">密码：</label>
+                <input type="password" name="mima" id="mima">
+            </p>
+            <p class="enter"><input name="tijiao" type="submit" class="button" value="登录"></p>
+        </fieldset>
+        <fieldset>
+            <legend>用户注册 </legend>
+            <p><label for="xingming2">用户名：</label>
+                <input type="text" name="xingming2" id="xingming2" /><span>*(最多30个字符)</span>
+            </p>
+            <p><label for="mima2">密码：</label>
+                <input type="password" name="mima2" id="mima2" /><span>*(最多30个字符)</span>
+            </p>
+            <p><label for="chongfumima2">重复密码：</label>
+                <input type="password" name="chongfumima2" id="chongfumima2" /><span>*(密码需要一致)</span>
+            </p>
+            <p><label for="secproblem">密码保护问题：</label><select class="sel" id="secproblem" name="secproblem">
+                    <option value="0">请选择密码提示问题</option>
+                </select>
+            </p>
+            <p><label for="daan">密码保护问题答案：</label><input type="text" name="daan" id="daan">
+            </p>
+            <p class="XB2">
+                <label for="xingbie2">性别：</label>
+                <label class="Wid2"><input type="radio" name="RadioGroup1" value="0" id="RadioGroup1_0">男</label>
+                <label class="Wid2"><input type="radio" name="RadioGroup1" value="1" id="RadioGroup1_1">女</label>
+            </p>
+            <p>
+                <label for="yinxiang2">本站印象：</label><textarea id="yinxiang2"></textarea>
+            </p>
+            <p class="fuwu"><label for="AgreeToTerms">同意服务条款：</label>
+                <input type="checkbox" name="AgreeToTerms" id="AgreeToTerms" value="1" />
+                <a href="#" title="您是否同意服务条款">查看服务条款？</a>
+            </p>
+            <p class="enter"><input name="tijiao" type="submit" class="buttom" value="提交">
+
+            </p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

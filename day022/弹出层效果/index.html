@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        body {
+            text-align: center;
+        }
+
+        button {
+            margin: 10px auto;
+            cursor: pointer;
+        }
+
+        #outer {
+            width: 600px;
+            height: 500px;
+            margin: 100px auto;
+            display: none;
+        }
+
+        .box-top {
+            border: 5px solid yellowgreen;
+            background: lightblue;
+            height: 100px;
+        }
+
+        .box-bottom {
+            border: 5px solid royalblue;
+            background: #ccc;
+            height: 380px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <button onclick="change()">弹出层</button>
+    <div id="outer">
+        <div class="box-top"></div>
+        <div class="box-bottom"></div>
+    </div>
+    <script>
+        function change() {
+            var b = document.getElementsByTagName("button");
+            var a = document.getElementById("outer");
+            a.style.display = 'block';
+        }
+    </script>
+</body>
+
+</html>

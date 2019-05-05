@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>弹窗广告</title>
+    <style type="text/css">
+        div.guanggao {
+            width: 150px;
+            height: 100px;
+            border: 2px solid blue;
+            float: right;
+            /*display: none;*/
+        }
+
+        div.wenzi {
+            text-align: center;
+            margin: 37.5px auto;
+        }
+
+        div.close1 {
+            float: right;
+            margin: -100px 5px 90px 90px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>邓超回忆录跑男故事</h1>
+    <p>25日，邓超在微博分享了一段自拍视频，在长达四分半钟的视频中，他多次表达了对奔跑吧家族的想念，
+        他还回忆起刚开始录制节目时大家的手足无措和节目录制期间大家的欢乐时光。邓超还表示，
+        希望观众朋友可以同样支持新加入的成员，给他们时间成长。
+    </p>
+    <p>今年3月，《奔跑吧》节目组宣布新一季节目常驻嘉宾将进行比较大的变动，老成员邓超、陈赫、王祖蓝、鹿晗等都因工作
+        安排原因无法继续录制，朱亚文、王彦霖、黄旭熙LUCAS和宋雨琦四位新嘉宾将加入录制。节目更换常驻嘉宾让不少忠实观
+        众都表示难以接受，网上争议声音不断。目前新一季的节目开播在即，邓超作为跑男团的老队长特意在微博发视频为节目打气，
+        他称目前他导演的电影《银河补习班》还在后期制作阶段，他在视频中表达了对各位跑男团老成员和节目工作人员的怀念，
+        他回忆起过去录制节目的时光，“我想起来我刚开始录制的时候特别傻，特别手足无措，特别不知道该怎么办，
+        第二集录完之后恺恺还在自责，找不到感觉，那个画面我永远会记得。”在视频的最后，邓超还表示希望观众朋友可以继续
+        支持新加入的成员，给他们时间成长，“我觉得他们一定会是最棒的跑男家族的成员。祝福新一季的跑男一切顺利，不要受伤，
+        我想念你们，we are 伐木累。”
+    </p>
+    <div id="ad" class="guanggao">
+        <div class="wenzi">
+            <h3>邓府山村</h3>
+        </div>
+        <div id="demo" class="close1" onclick="closeWindow()"><img style="width: 10px;height: 10px;" src="img/下载.jpg"></div>
+    </div>
+    <script>
+          function closeWindow(){
+           var elem= document.getElementById('ad')
+           elem.style.display='none'
+          }
+          setInterval(function(){
+            closeWindow()
+          },2000)
+
+    </script>
+</body>
+
+</html>

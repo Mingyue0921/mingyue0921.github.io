@@ -1,0 +1,26 @@
+html,body{
+   margin: 0;
+   padding: 0;
+   font-size: 12px;
+}
+a{
+   color: #000;
+   text-decoration: none;
+}
+ul{
+   list-style: none;
+}
+.header-top>.left>ul>li{
+   display: inline-block;
+}
+.header-top>.header-top-main{
+   display: block;
+   margin: 0 auto;
+   width: 1000px;
+
+}
+.header-top-main>.left>ul>li
+.header-top{
+   height:25px;
+   background-color: #333;
+}
