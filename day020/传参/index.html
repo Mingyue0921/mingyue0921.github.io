@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style type="text/css">
-    body{
-        text-align: center;
-    }
-    button{
-        cursor: pointer;
-    }
+        body {
+            text-align: center;
+        }
+
+        button {
+            cursor: pointer;
+        }
     </style>
 </head>
+
 <body>
-    <p><input type="text" value="北京市"></p> 
+    <p><input type="text" value="北京市"></p>
     <p><input type="text" value="朝阳区"></p>
     <p><button onclick="">传参</button></p>
     <script>
-        var myFunction=function(a,b){
-         alert(a.value);
-         alert(b.value)
+        var myFunction = function (a, b) {
+            alert(a.value);
+            alert(b.value)
         }
-    window.onload=function(){
-        var value=document.getElementsByTagName("input");
-        var oBtn=document.getElementsByTagName("button")[0];
-        oBtn.onclick=function(){
-            myFunction(value[0],value[1])
+        window.onload = function () {
+            var value = document.getElementsByTagName("input");
+            var oBtn = document.getElementsByTagName("button")[0];
+            oBtn.onclick = function () {
+                myFunction(value[0], value[1])
+            }
         }
-    }
     </script>
 </body>
+
 </html>
