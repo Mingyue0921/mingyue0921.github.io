@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>鼠标移动改变图片路径</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 420px;
+            height: 535px;
+            border: solid 1px black;
+            margin: 0 auto;
+        }
+
+        .top {
+            height: 315px;
+        }
+
+        .center {
+            height: 110px;
+        }
+
+        .bottom {
+            height: 110px;
+        }
+
+        .first img {
+            width: 300px;
+            height: 303px;
+            border-radius: 5px;
+            float: left;
+            position: relative;
+            margin: 6px 5px;
+        }
+
+        img {
+            border-radius: 5px;
+            height: 100px;
+            width: 100px;
+            margin: 2px 2px 0 0;
+        }
+
+        .center img {
+            float: left;
+            margin: 5px 2px;
+
+        }
+
+        .bottom img {
+            float: left;
+            margin: 2px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var previewImg = document.getElementById('preview')
+            var oImg = document.querySelectorAll('.item img');
+            for (var i = 0; i < oImg.length; i++) {
+                oImg[i].onmouseover = function () {
+                    console.log(this)
+                    previewImg.src = this.src
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="box">
+        <div class="top">
+            <div class="first">
+                <a href="">
+                    <img id="preview" src="image/1.jpg" alt="">
+                </a>
+            </div>
+            <div class="item"><a href=""><img src="image/1.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="image/2.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="image/3.jpg" alt=""></a></div>
+        </div>
+        <div class="center">
+            <div class="item"><a href=""><img src="image/4.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="image/5.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="image/6.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="image/7.jpg" alt=""></a></div>
+        </div>
+        <div class="bottom">
+            <div class="item"><a href=""><img src="image/8.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="image/9.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="image/10.jpg" alt=""></a></div>
+            <div class="item"><a href=""><img src="image/11.jpg" alt=""></a></div>
+        </div>
+    </div>
+</body>
+
+</html>
